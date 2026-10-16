@@ -112,3 +112,4 @@ pendant que le serveur tourne.
 - `site/index.html` : le site (identique à la version principale ; il se branche sur la session quand il est servi par ce serveur)
 - `site/login.html` : la page de connexion et d'inscription
 - `tests/auth-tests.js` : les tests de sécurité
+"# niro" 
