@@ -22,8 +22,8 @@ const http=require('node:http'),https=require('node:https'),fs=require('node:fs'
 /* ---------- configuration (variables d'environnement) ---------- */
 const env=process.env,int=(k,d)=>{const n=parseInt(env[k],10);return Number.isFinite(n)&&n>0?n:d;};
 const CFG={
-  port:int('PORT',3000),host:env.HOST||'0.0.0.0'
-  dataDir:path.resolve(env.DATA_DIR||path.join(__dirname,'data')),
+  port:int('PORT',3000),host:env.HOST||'0.0.0.0',
+    dataDir:path.resolve(env.DATA_DIR||path.join(__dirname,'data')),
   siteDir:path.resolve(env.SITE_DIR||path.join(__dirname,'site')),
   registration:['open','invite','closed'].includes(env.REGISTRATION)?env.REGISTRATION:'invite',
   cookieSecure:env.COOKIE_SECURE||'auto',trustProxy:env.TRUST_PROXY==='1',
