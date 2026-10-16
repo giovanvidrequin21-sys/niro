@@ -1,0 +1,8 @@
+{
+  "name": "atelier-securise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serveur d'authentification et de protection du site StG Diagnostic auto (aucune dépendance externe)",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.js", "test": "node tests/auth-tests.js" }
+}
